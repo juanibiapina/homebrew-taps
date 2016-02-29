@@ -1,9 +1,9 @@
 class Zas < Formula
   desc "Local development made easy"
   homepage ""
-  url "https://github.com/juanibiapina/zas/releases/download/v0.14.0/zas-v0.14.0.Darwin.tar.gz"
-  version "0.14.0"
-  sha256 "d65cfde4e50a7530ee45bc2e4649321bc7e2ab3f22f3bc3603bce84581e3957f"
+  url "https://github.com/juanibiapina/zas/releases/download/v0.15.0/zas-v0.15.0.Darwin.tar.gz"
+  version "0.15.0"
+  sha256 "ea06a85bbbf7cbf22b0c4a808f54ea7f0f2e1aaf9634dd3f6ba62072bf093dae"
 
   def install
     prefix.install Dir["resources"]
