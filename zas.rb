@@ -1,9 +1,9 @@
 class Zas < Formula
   desc "Simple router for local web development"
   homepage "https://github.com/juanibiapina/zas"
-  url "https://github.com/juanibiapina/zas/releases/download/v0.18.0/zas-v0.18.0-x86_64-apple-darwin.tar.gz"
-  version "0.18.0"
-  sha256 "4cbe062b3db4cf2607a14250012b60526ba6ed1640972c95de59dc8bb296e85b"
+  url "https://github.com/juanibiapina/zas/releases/download/v0.19.0/zas-v0.19.0-x86_64-apple-darwin.tar.gz"
+  version "0.19.0"
+  sha256 "faa5acb757c4e43b431d0e3884b973d4907103e393a5cc9771b0c20f600f08e8"
 
   def install
     bin.install "zas"
