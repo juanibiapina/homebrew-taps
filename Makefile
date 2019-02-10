@@ -1,7 +1,7 @@
 .PHONY: roadrunner
 roadrunner:
-	./scripts/generate.sh juanibiapina roadrunner
+	make-formula juanibiapina roadrunner
 
 .PHONY: antr
 antr:
-	./scripts/generate.sh juanibiapina antr
+	make-formula juanibiapina antr
