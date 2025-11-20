@@ -9,3 +9,7 @@ antr:
 .PHONY: sub
 sub:
 	scripts/make-formula juanibiapina sub
+
+.PHONY: gob
+gob:
+	scripts/make-go-formula juanibiapina gob
