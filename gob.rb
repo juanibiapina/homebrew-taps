@@ -5,21 +5,21 @@
 class Gob < Formula
   desc "Background job management for HUMANs and AGENTs"
   homepage "https://github.com/juanibiapina/gob"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/gob/releases/download/v1.2.0/gob_1.2.0_darwin_amd64.tar.gz"
-      sha256 "17856ee2b066d594af76e9b21dd28c8636aa51534d0b4494b5a4c3a7f95c1f33"
+      url "https://github.com/juanibiapina/gob/releases/download/v1.2.1/gob_1.2.1_darwin_amd64.tar.gz"
+      sha256 "2ab8e33a90287bc270355880d63c2d5c30da8316f3c8b8193cc94188d5a0b6d2"
 
       def install
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/gob/releases/download/v1.2.0/gob_1.2.0_darwin_arm64.tar.gz"
-      sha256 "37bf9662189d081823045006b5830e02cea9320eba42072d30a64017ab3c86ac"
+      url "https://github.com/juanibiapina/gob/releases/download/v1.2.1/gob_1.2.1_darwin_arm64.tar.gz"
+      sha256 "09ea75e17d63cf991486b4cb1c0897e8be79245c1376048899cab50b00aa783d"
 
       def install
         bin.install "gob"
@@ -29,15 +29,15 @@ class Gob < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v1.2.0/gob_1.2.0_linux_amd64.tar.gz"
-      sha256 "1e6ce4b999be7a990b877127ee64bf8e17ca816f2245dea6633c9a2e494ae08c"
+      url "https://github.com/juanibiapina/gob/releases/download/v1.2.1/gob_1.2.1_linux_amd64.tar.gz"
+      sha256 "d99be7dd9212fe796a3b1160c60fcaaa19afe4af682185869b2b79e49968e800"
       def install
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v1.2.0/gob_1.2.0_linux_arm64.tar.gz"
-      sha256 "d04dd52656f422f399aa1a120803b1dcb0f03ee9c4a3a9aa602267e172a19ed8"
+      url "https://github.com/juanibiapina/gob/releases/download/v1.2.1/gob_1.2.1_linux_arm64.tar.gz"
+      sha256 "f5f094165b304d720d0445e88dc515d59cafc8ea0ae6b7322efcf88174b10539"
       def install
         bin.install "gob"
       end
