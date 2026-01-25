@@ -5,21 +5,21 @@
 class Gob < Formula
   desc "Background job management for HUMANs and AGENTs"
   homepage "https://github.com/juanibiapina/gob"
-  version "3.0.0-rc.1"
+  version "3.0.0-rc.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.1/gob_3.0.0-rc.1_darwin_amd64.tar.gz"
-      sha256 "6fc421eae7c594d614296bfeb6aa4a47c870a852f7b7a3b42f4636a6c7f2d18d"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.2/gob_3.0.0-rc.2_darwin_amd64.tar.gz"
+      sha256 "c049ecc7c94dedac85d5783e06456c0753c21d2d6fb6d47965bc19ba6097d6aa"
 
       def install
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.1/gob_3.0.0-rc.1_darwin_arm64.tar.gz"
-      sha256 "7ff7d6a166038e64439a72d74d10dd11ed943604e01d6acec2a24f5a4a3b4d2a"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.2/gob_3.0.0-rc.2_darwin_arm64.tar.gz"
+      sha256 "6912a1e684378c4709fe929a459f6c017605d4853001f0003578fd7ffaa9a11f"
 
       def install
         bin.install "gob"
@@ -29,15 +29,15 @@ class Gob < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.1/gob_3.0.0-rc.1_linux_amd64.tar.gz"
-      sha256 "3cf2bd0a16012c70b8cfda9abd3fe33a1233e29c469d19a26e0e9c9ffa1fa7e8"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.2/gob_3.0.0-rc.2_linux_amd64.tar.gz"
+      sha256 "e22b4423a524d52e5f361091a9ddc717313cbe82c2a384de89ec7f88396d476d"
       def install
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.1/gob_3.0.0-rc.1_linux_arm64.tar.gz"
-      sha256 "ac3d2b04eb83ad281dfb1fe5a4c1f4bfe6904bcbb11c8fbfa3ee12f845baa45c"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.0.0-rc.2/gob_3.0.0-rc.2_linux_arm64.tar.gz"
+      sha256 "14a2fabf94a1270cadc5f25af5d8fb39b7a7e1c9748f07e83511fc70fb5906ff"
       def install
         bin.install "gob"
       end
