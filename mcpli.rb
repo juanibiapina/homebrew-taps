@@ -5,21 +5,21 @@
 class Mcpli < Formula
   desc "MCP CLI - invoke MCP server tools from the command line"
   homepage "https://github.com/juanibiapina/mcpli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.0.0/mcpli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "05eabda93971a5a93293ce9b34f978c3e8c3bfde14c7c8dfc866fc95d992af3e"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.1.0/mcpli_1.1.0_darwin_amd64.tar.gz"
+      sha256 "58595a5dd5757590362ca692db4fc7347e67daf9b966b1c8874e1b13d9f77587"
 
       def install
         bin.install "mcpli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.0.0/mcpli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "3c56b97036b6c2ae4a9dd0fa6458d0d8baf97b29fa27f21584641096277b38fa"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.1.0/mcpli_1.1.0_darwin_arm64.tar.gz"
+      sha256 "c883a59897bf0bd21dc962f9f27881bdcc546a4eb9f8686f853ec10f31561cb0"
 
       def install
         bin.install "mcpli"
@@ -29,15 +29,15 @@ class Mcpli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.0.0/mcpli_1.0.0_linux_amd64.tar.gz"
-      sha256 "28312cabd06cab591111bb00557c2f0ebba4bd45c7f7dee23727f3b968665865"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.1.0/mcpli_1.1.0_linux_amd64.tar.gz"
+      sha256 "06faed02405782452fd2ce1d7f6849067c88d41cc7ed26de5dfc1b532089cc82"
       def install
         bin.install "mcpli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.0.0/mcpli_1.0.0_linux_arm64.tar.gz"
-      sha256 "5228316860b00140ebf7d52125537dd264a1bd01221690a9127aea43a579c335"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.1.0/mcpli_1.1.0_linux_arm64.tar.gz"
+      sha256 "13b6fb959a56e997b1ac9c460db2fb52aa959211bd1dddab1257f33d5c2bbeb8"
       def install
         bin.install "mcpli"
       end
