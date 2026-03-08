@@ -5,23 +5,23 @@
 class Gob < Formula
   desc "Background job management for HUMANs and AGENTs"
   homepage "https://github.com/juanibiapina/gob"
-  version "3.3.0"
+  version "3.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.3.0/gob_3.3.0_darwin_amd64.tar.gz"
-      sha256 "d9c05c2c2dbc7858fbad1897638d0ea55133793ea463326489f211d601b0c0e3"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.4.0/gob_3.4.0_darwin_amd64.tar.gz"
+      sha256 "fa5dac5a3f8e08c8684bd9edb841190141a61d74955b153acfcc12b3ee1f3cd5"
 
-      def install
+      define_method(:install) do
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.3.0/gob_3.3.0_darwin_arm64.tar.gz"
-      sha256 "d669517fd5586ab7ba5a6cd6c454593a6fc83f3fabb56865b350e397ff31c36f"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.4.0/gob_3.4.0_darwin_arm64.tar.gz"
+      sha256 "910751786cd602205638c08a0e433a571c4cbb0c3aee8be694c2649333455c8f"
 
-      def install
+      define_method(:install) do
         bin.install "gob"
       end
     end
@@ -29,16 +29,16 @@ class Gob < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.3.0/gob_3.3.0_linux_amd64.tar.gz"
-      sha256 "571702dd463fa38c6b5bf1a2aec926bdb884a76e73bb6af39c9268a06cbf71cc"
-      def install
+      url "https://github.com/juanibiapina/gob/releases/download/v3.4.0/gob_3.4.0_linux_amd64.tar.gz"
+      sha256 "12e4025a0e1b1749cb3d0307a5fee096bca324775ff435f74b1d597f9d4a7085"
+      define_method(:install) do
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.3.0/gob_3.3.0_linux_arm64.tar.gz"
-      sha256 "107cc024de39319a7be80f00f31288eada0e0d12283ac8ae48805f68d22bcc4d"
-      def install
+      url "https://github.com/juanibiapina/gob/releases/download/v3.4.0/gob_3.4.0_linux_arm64.tar.gz"
+      sha256 "9b1feca7fbb263d457fa715b56a05c1d8dcca83e22740e54cdfc535508aea531"
+      define_method(:install) do
         bin.install "gob"
       end
     end
