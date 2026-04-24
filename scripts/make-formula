@@ -27,6 +27,8 @@ curl -L -O "${RELEASE_URL}"
 SHASUM=`shasum -a 256 ${BINARY_FILE_NAME} | cut -f 1 -d " "`
 DESCRIPTION=`curl https://api.github.com/repos/${user}/${repo} | jq -r .description`
 
+mkdir -p Formula
+
 echo "class ${repo^} < Formula
   desc '${DESCRIPTION}'
   homepage 'https://github.com/${user}/${repo}'
@@ -37,6 +39,6 @@ echo "class ${repo^} < Formula
   def install
     bin.install '${repo}'
   end
-end" > ${repo}.rb
+end" > Formula/${repo}.rb
 
 rm ${BINARY_FILE_NAME}
