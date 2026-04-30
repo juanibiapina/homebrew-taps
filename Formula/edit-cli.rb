@@ -1,25 +1,25 @@
 class EditCli < Formula
   desc "Tools for reviewing code in the agentic era"
   homepage "https://github.com/juanibiapina/deltoids"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.2.0/edit-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "51143f8473e55f224392828020ba0f6f404504b8526498e38976ab61e330ae25"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.3.0/edit-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "2d4956d038e46b85581c149c669e588d35ca84f9b17ca30ec41d4c5b2935fe0b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.2.0/edit-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "dd1fade5bc28adea7f5c16d089fe8822e58c94744f0c8cce7cbe15f05ed50767"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.3.0/edit-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "7b045a72186c41e5ed9305992d330516df35224d70bffedc2dbc9eec0155bcdd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.2.0/edit-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "795c9448c055f9f68ab7ad8ddb92632b74c15c788f10fdc2fa149cd338915c77"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.3.0/edit-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "176845ab597033dffc08e746d340d6e311b92aa5cf3afb16fa834a8da9640401"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.2.0/edit-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f1c127bdc8620f4874fbaa41f58324f1dfa81072d9b4d216d1639e56bb61b43d"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.3.0/edit-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7e4e8d2c1d5b87fd77144fa3fc786e5d8e821502c305341132f0a0196a56ad6b"
     end
   end
   license "MIT"
