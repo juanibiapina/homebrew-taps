@@ -5,21 +5,21 @@
 class Todo < Formula
   desc "A simple per-directory todo list"
   homepage "https://github.com/juanibiapina/todo"
-  version "3.2.0"
+  version "3.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/todo/releases/download/v3.2.0/todo_3.2.0_darwin_amd64.tar.gz"
-      sha256 "cd99715b66743892553c0c83f80bc88535ff58cd7057a44127b357a216e00e03"
+      url "https://github.com/juanibiapina/todo/releases/download/v3.3.0/todo_3.3.0_darwin_amd64.tar.gz"
+      sha256 "a8b70fcb1d75e359121f6f66951d21777b68b15b705f2c0830c53af17b1c217d"
 
       define_method(:install) do
         bin.install "todo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/todo/releases/download/v3.2.0/todo_3.2.0_darwin_arm64.tar.gz"
-      sha256 "281171a31a72639b8fc869ef8bf89d36e6ae7483dceff3da6211f9342ff2476a"
+      url "https://github.com/juanibiapina/todo/releases/download/v3.3.0/todo_3.3.0_darwin_arm64.tar.gz"
+      sha256 "818bcc51718257ae9539c07c70dae0ed8af9dcb034ff2727e486c7f1e19b4ce4"
 
       define_method(:install) do
         bin.install "todo"
@@ -29,15 +29,15 @@ class Todo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/todo/releases/download/v3.2.0/todo_3.2.0_linux_amd64.tar.gz"
-      sha256 "c279474f05e8c2523237a0d199331198625784e7f23e2cff1c7d7697ace5df1c"
+      url "https://github.com/juanibiapina/todo/releases/download/v3.3.0/todo_3.3.0_linux_amd64.tar.gz"
+      sha256 "4163301d01f1239d281f68523b722ab3b0fcff5ae0cb3fb1106b2aa002141305"
       define_method(:install) do
         bin.install "todo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/todo/releases/download/v3.2.0/todo_3.2.0_linux_arm64.tar.gz"
-      sha256 "321420658a61130f99b09211c2b941eed5128d24b4472237b6f22dccb51cb23c"
+      url "https://github.com/juanibiapina/todo/releases/download/v3.3.0/todo_3.3.0_linux_arm64.tar.gz"
+      sha256 "04adbac04ce8c0e6cd110cfbdd4e551e91c6a0cac3594b1be9168e7e7f693a7b"
       define_method(:install) do
         bin.install "todo"
       end
