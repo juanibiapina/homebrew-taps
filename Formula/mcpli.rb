@@ -5,21 +5,21 @@
 class Mcpli < Formula
   desc "MCP CLI - invoke MCP server tools from the command line"
   homepage "https://github.com/juanibiapina/mcpli"
-  version "1.3.0"
+  version "1.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.0/mcpli_1.3.0_darwin_amd64.tar.gz"
-      sha256 "f8c73360014111e0826f9f6388ea9055ad0282eeda8613960fc7fdd558784b8a"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.1/mcpli_1.3.1_darwin_amd64.tar.gz"
+      sha256 "479d31ca9973ea230153e3749bf3217a26f0b37bff0cf40b6f7f2d4647ca57c3"
 
       define_method(:install) do
         bin.install "mcpli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.0/mcpli_1.3.0_darwin_arm64.tar.gz"
-      sha256 "8168508aeb9fcef89bd0e753516a93691db85e6ae87e3e8fccca80a6192df4d7"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.1/mcpli_1.3.1_darwin_arm64.tar.gz"
+      sha256 "2e40e1fa3a02747a73bcd1e7363946fd289c4b498a6beb63ffc45662ebfaecb5"
 
       define_method(:install) do
         bin.install "mcpli"
@@ -29,15 +29,15 @@ class Mcpli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.0/mcpli_1.3.0_linux_amd64.tar.gz"
-      sha256 "3291904f4475b28011ee0987de6f2ed3d3b4209b6d9e0dfdf6f3a1a8f435cdc2"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.1/mcpli_1.3.1_linux_amd64.tar.gz"
+      sha256 "71a73bee681188bfd709ef5182b46df94c06f45d64c1fecd206c9c493c23224d"
       define_method(:install) do
         bin.install "mcpli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.0/mcpli_1.3.0_linux_arm64.tar.gz"
-      sha256 "3a78208b8e95e1f4dfee9adfc2cb4e2158151557202aa46b6d0a2e8d5e2e14b8"
+      url "https://github.com/juanibiapina/mcpli/releases/download/v1.3.1/mcpli_1.3.1_linux_arm64.tar.gz"
+      sha256 "79461b96b1e6ea8e62842b6d81bbc3dfd9031ad85a9623179c266f52b864715c"
       define_method(:install) do
         bin.install "mcpli"
       end
