@@ -5,41 +5,53 @@
 class Gob < Formula
   desc "Background job management for HUMANs and AGENTs"
   homepage "https://github.com/juanibiapina/gob"
-  version "3.7.0"
+  version "3.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_darwin_amd64.tar.gz"
-      sha256 "9825d49c3689a8bb1a7b975c7aed005b84610c78d1ff58a28a872ec182168412"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.1/gob_3.7.1_darwin_amd64.tar.gz"
+      sha256 "8ad31e211bbf6a6c6f97216e9ec00c478049ec64fd80fcc85e5d97d096741004"
 
       define_method(:install) do
         bin.install "gob"
+        bash_completion.install "completions/gob.bash" => "gob"
+        zsh_completion.install  "completions/gob.zsh"  => "_gob"
+        fish_completion.install "completions/gob.fish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_darwin_arm64.tar.gz"
-      sha256 "9ef3db39012bf5582eb0d07a285362b8ccddb1cc352f52d7eb21786877f12908"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.1/gob_3.7.1_darwin_arm64.tar.gz"
+      sha256 "1ad401d3bbf601cd2e833eb67e708e46492a8de836f4b9637b45f34a3a329297"
 
       define_method(:install) do
         bin.install "gob"
+        bash_completion.install "completions/gob.bash" => "gob"
+        zsh_completion.install  "completions/gob.zsh"  => "_gob"
+        fish_completion.install "completions/gob.fish"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_linux_amd64.tar.gz"
-      sha256 "ee8fb2891b5ac0929f021b6dcc1614f472550c8e3e58493b3cb77e4d9581960a"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.1/gob_3.7.1_linux_amd64.tar.gz"
+      sha256 "90b4ceae0e0739ff03c23b25dc9981ccc6e587d85e59778b59fb1a0653427ef2"
       define_method(:install) do
         bin.install "gob"
+        bash_completion.install "completions/gob.bash" => "gob"
+        zsh_completion.install  "completions/gob.zsh"  => "_gob"
+        fish_completion.install "completions/gob.fish"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_linux_arm64.tar.gz"
-      sha256 "192bb4d36a9c1dba12e4fe3181596f26a386405addfc6a10a7321dd0953e5a8c"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.1/gob_3.7.1_linux_arm64.tar.gz"
+      sha256 "13ddae0c7fd59d4906dd055a41702687e541db871ee8b58466e5f7911b309f7c"
       define_method(:install) do
         bin.install "gob"
+        bash_completion.install "completions/gob.bash" => "gob"
+        zsh_completion.install  "completions/gob.zsh"  => "_gob"
+        fish_completion.install "completions/gob.fish"
       end
     end
   end
