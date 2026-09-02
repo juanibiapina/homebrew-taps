@@ -5,21 +5,21 @@
 class Gob < Formula
   desc "Background job management for HUMANs and AGENTs"
   homepage "https://github.com/juanibiapina/gob"
-  version "3.6.0"
+  version "3.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.6.0/gob_3.6.0_darwin_amd64.tar.gz"
-      sha256 "83861d23ab5fbe219808431181652c45080dc74da9e45e1cac8573a3e0f8f31d"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_darwin_amd64.tar.gz"
+      sha256 "9825d49c3689a8bb1a7b975c7aed005b84610c78d1ff58a28a872ec182168412"
 
       define_method(:install) do
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.6.0/gob_3.6.0_darwin_arm64.tar.gz"
-      sha256 "6fff9494b29508f791f42e01510722d7b68c8837ee6cbf2e2d9ba6220f412121"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_darwin_arm64.tar.gz"
+      sha256 "9ef3db39012bf5582eb0d07a285362b8ccddb1cc352f52d7eb21786877f12908"
 
       define_method(:install) do
         bin.install "gob"
@@ -29,15 +29,15 @@ class Gob < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.6.0/gob_3.6.0_linux_amd64.tar.gz"
-      sha256 "7922e7ca37f9f7e047a445d3772c36698f490caaa3390de0982b10b444e446ca"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_linux_amd64.tar.gz"
+      sha256 "ee8fb2891b5ac0929f021b6dcc1614f472550c8e3e58493b3cb77e4d9581960a"
       define_method(:install) do
         bin.install "gob"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juanibiapina/gob/releases/download/v3.6.0/gob_3.6.0_linux_arm64.tar.gz"
-      sha256 "4d4e16a58399733e3903b3d42525b374f0a6b496decbb890e410d65e4e227a3d"
+      url "https://github.com/juanibiapina/gob/releases/download/v3.7.0/gob_3.7.0_linux_arm64.tar.gz"
+      sha256 "192bb4d36a9c1dba12e4fe3181596f26a386405addfc6a10a7321dd0953e5a8c"
       define_method(:install) do
         bin.install "gob"
       end
