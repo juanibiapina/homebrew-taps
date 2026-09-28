@@ -1,25 +1,25 @@
 class Starmux < Formula
   desc "A fast and configurable tmux sidebar"
   homepage "https://github.com/juanibiapina/starmux"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/starmux/releases/download/v0.4.0/starmux-aarch64-apple-darwin.tar.gz"
-      sha256 "b4dfff39f1b14825aab093a99ab8e77ab211650c943d1f56c029a6d51b3e41c2"
+      url "https://github.com/juanibiapina/starmux/releases/download/v0.5.0/starmux-aarch64-apple-darwin.tar.gz"
+      sha256 "c29cb58228567772aecd2ee619be664f192b442e6021a8b87bd7d3909b324a4a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/starmux/releases/download/v0.4.0/starmux-x86_64-apple-darwin.tar.gz"
-      sha256 "a775e345741513514e578149093416eceb3a456a8e8cce78d004720ea9da511f"
+      url "https://github.com/juanibiapina/starmux/releases/download/v0.5.0/starmux-x86_64-apple-darwin.tar.gz"
+      sha256 "5cf257d5eabda548adc8551144765108cc3f831a58e1bd2f3a59c09a6990e8e7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/starmux/releases/download/v0.4.0/starmux-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9615aa2db98c5e0d5e775baf6dc9cc86a0528113aeb33d4941305cc0f63b10f9"
+      url "https://github.com/juanibiapina/starmux/releases/download/v0.5.0/starmux-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8499c9d9cc08dbb162dfdbc0805548137ae679473aace300ffb5485f00ebe58c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/starmux/releases/download/v0.4.0/starmux-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5a9002c22a52e007bb0d2f2a011823fab63c059f2d0f31b4b014ea70f739d4c3"
+      url "https://github.com/juanibiapina/starmux/releases/download/v0.5.0/starmux-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0a64c2b22423789d1f335d0c5ef5de68fdfe36bc757281da9548dbe77e692c24"
     end
   end
   license "MIT"
