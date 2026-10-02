@@ -1,25 +1,25 @@
 class Deltoids < Formula
   desc "Tools for reviewing code in the agentic era"
   homepage "https://github.com/juanibiapina/deltoids"
-  version "0.12.2"
+  version "0.13.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.12.2/deltoids-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "d61aa3371fe83d49f71d1c649fcc0c8ae93da121a4f436bbd7001ec415956830"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.13.0/deltoids-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "7357f0bca2597b392cd2678157671e17f3b7d5841613786ebe3ca88c2431b4c2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.12.2/deltoids-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "9c7e9d01c6fe3973dbb570022453ba73f9db9f41b858ee600213bd663598c218"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.13.0/deltoids-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "ae3e5d32df32ed01e92fb4737077825f49142306606183fd602d2403f2d6962a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.12.2/deltoids-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e3cb670ae0bcffcdf71e2737e56641a1e72b123fdd42127367ed195601c56d03"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.13.0/deltoids-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "573a931fa834c43816a2ed9b21bb86812bdb2696722df2fd8d62d96c55adf0ef"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.12.2/deltoids-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "965460361cecf3cfb549241a9b56aac45298687e4e7d1cf9b901b3be328ff5b1"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.13.0/deltoids-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "da06e2a12a527ee5426336745ce4bd10b7c471f0f2ca7fe495857f89f6f94e9e"
     end
   end
   license "MIT"
@@ -47,10 +47,18 @@ class Deltoids < Formula
   end
 
   def install
-    bin.install "deltoids" if OS.mac? && Hardware::CPU.arm?
-    bin.install "deltoids" if OS.mac? && Hardware::CPU.intel?
-    bin.install "deltoids" if OS.linux? && Hardware::CPU.arm?
-    bin.install "deltoids" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "deltoids"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "deltoids"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "deltoids"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "deltoids"
+    end
 
     install_binary_aliases!
 
