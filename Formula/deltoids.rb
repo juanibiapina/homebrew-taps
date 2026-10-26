@@ -1,25 +1,25 @@
 class Deltoids < Formula
   desc "Tools for reviewing code in the agentic era"
   homepage "https://github.com/juanibiapina/deltoids"
-  version "0.16.0"
+  version "0.17.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.16.0/deltoids-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "2c3d1b0d71ffbec1727883f45fcb53247a35c4f3453d7ccc7a248016f3db444f"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.17.0/deltoids-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "39a9daeaf0edb3b85fd6b38ea62829b7e37d7f7b0add0f3cf528dddb1f9140dd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.16.0/deltoids-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "86b35bffd3fccd17488a8765d98c8f0a0e407e661b811370d00352b694ea9bae"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.17.0/deltoids-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "662cbeb1e7215e84ce53bd2272cfa9ca5264c56f9c3d8d8336cd81ee75247760"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.16.0/deltoids-cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7d0746a1aaeb8637f5836ced660c48a74bf322ada0c962995da6265ee3d69f89"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.17.0/deltoids-cli-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4fa3ed55c65450ffa0b29a0644c726bb6e41c5dce34483485a73fe022532a4b2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/deltoids/releases/download/v0.16.0/deltoids-cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a669371c74a6419cdc31b36d559f162eb8cf17e732a9a934d0ef09e9b861e1fc"
+      url "https://github.com/juanibiapina/deltoids/releases/download/v0.17.0/deltoids-cli-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3b92e2d5709bb75a8fced5da7ae8ae45d43569b3d7c7d4c8fa9b930887a5b362"
     end
   end
   license "MIT"
