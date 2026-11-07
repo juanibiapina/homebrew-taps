@@ -1,25 +1,25 @@
 class Todo < Formula
   desc "A simple per-directory todo list"
   homepage "https://github.com/juanibiapina/todo"
-  version "4.0.0"
+  version "4.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/todo/releases/download/v4.0.0/todo-aarch64-apple-darwin.tar.gz"
-      sha256 "0997aa5f51708ea0f8814bd4ec6b8ef83597d19aad8af9401f643f65d30f4535"
+      url "https://github.com/juanibiapina/todo/releases/download/v4.1.0/todo-aarch64-apple-darwin.tar.gz"
+      sha256 "3bfff7f09b9f8adfed47dccf4b8f734783527311cc6c1ad5dfc288ab4b0a3c1c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/todo/releases/download/v4.0.0/todo-x86_64-apple-darwin.tar.gz"
-      sha256 "98d0499db0d5796c59e2f749d44a20fb19024bd98fd74fabca4472849d09be36"
+      url "https://github.com/juanibiapina/todo/releases/download/v4.1.0/todo-x86_64-apple-darwin.tar.gz"
+      sha256 "38ca08306fce23184a97dcef23a7b4e460ea49faf455768056c749709b16a661"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/todo/releases/download/v4.0.0/todo-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "b8a7ff1162ad438eac65bb628f9ef46a8fbc5b4cf6d74bf1069a28875ce6cb3c"
+      url "https://github.com/juanibiapina/todo/releases/download/v4.1.0/todo-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "339976f01d1000cd49f92c4079244efa6ccdf564e59e9122e9367b899bf625b7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/todo/releases/download/v4.0.0/todo-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "81cc1dc75534324268acaeb092b0420751c0f734e58bb3364e364278d0e579c3"
+      url "https://github.com/juanibiapina/todo/releases/download/v4.1.0/todo-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "62f82684cc1ecb278c85f065b8a2d9add5f00a978a47cfdde42c19ce9759802e"
     end
   end
   license "MIT"
