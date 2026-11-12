@@ -1,25 +1,25 @@
 class Ghtui < Formula
   desc "A rich terminal UI for GitHub that doesn't break your flow"
-  homepage "https://github.com/juanibiapina/ghtui"
-  version "0.1.0"
+  homepage "https://juanm.dev/ghtui/"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/ghtui/releases/download/v0.1.0/ghtui-aarch64-apple-darwin.tar.gz"
-      sha256 "41e691ab52348b35736c53228d0237765c66f5d3d0536532596ec38ced2213d2"
+      url "https://github.com/juanibiapina/ghtui/releases/download/v0.2.0/ghtui-aarch64-apple-darwin.tar.gz"
+      sha256 "b0db73c75e00450128baf12b6eb769fd3981d00b6fb82290ac314f2d15bda372"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/ghtui/releases/download/v0.1.0/ghtui-x86_64-apple-darwin.tar.gz"
-      sha256 "613e652adc561686d9e2832de248b7ad8339d77d2cfa39cc8192f86990ca834f"
+      url "https://github.com/juanibiapina/ghtui/releases/download/v0.2.0/ghtui-x86_64-apple-darwin.tar.gz"
+      sha256 "2c0dbddab8cf0128b2478f9ff3c0fe224172924bf65cc73ae0d9b52fe51cf813"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/juanibiapina/ghtui/releases/download/v0.1.0/ghtui-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "aae19a7a6872276af2b41267227db61f855684f8a60dd43b34069bc330e2d5cb"
+      url "https://github.com/juanibiapina/ghtui/releases/download/v0.2.0/ghtui-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "341cebdf21bb85c2f9d9f3a23665a9982ea2719520bf0eb3d808919d1be00cb4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/juanibiapina/ghtui/releases/download/v0.1.0/ghtui-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "39459745f8edc8c43ae14625eb825f1d6f2c0a127a577f47a82ddd954db59c42"
+      url "https://github.com/juanibiapina/ghtui/releases/download/v0.2.0/ghtui-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "feab8d9b024c14b61e523965874dba0deb97ebd9703ca707cb239b9af558154b"
     end
   end
   license "MIT"
